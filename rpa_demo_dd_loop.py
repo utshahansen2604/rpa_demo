@@ -23,7 +23,7 @@ driver.maximize_window()
 
 
 
-for i in range(0,3):
+for i in range(0,3): #Loop for 'n' requests
 #Navigate to the application home page
     time.sleep(2)
     url="https://shell.service-now.com/sp?id=sc_cat_item_guide&sys_id=54b94727dbf1df40bd27f9231d96199c"  #Linux/Unix Services Pages -> Linux Server Decommission
