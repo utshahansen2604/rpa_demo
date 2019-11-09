@@ -22,7 +22,6 @@ driver.implicitly_wait(15)
 driver.maximize_window()
 
 
-
 for i in range(0,3):
 #Navigate to the application home page
     time.sleep(2)
@@ -73,7 +72,7 @@ for i in range(0,3):
     but_click("//*[@id='1f3d8d91dba95740f16ef1951d961902']")
     time.sleep(2)
     ###########################################################
-    
+    #Form Population
     field_fill("//*[@id='sp_formfield_sh_provide_business_justification']","Lorem Ipsum")
     field_fill_with_dropdown("//*[@id='s2id_autogen3']","CAINCC-N-B00301")
     
