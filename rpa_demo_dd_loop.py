@@ -29,7 +29,7 @@ for i in range(0,3):
     driver.get(url)
     action=ActionChains(driver)
     
-    def but_click(item_xpath):
+    def but_click(item_xpath): ##Button Click
         try:
             WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, item_xpath)))
         except (TimeoutException) as py_ex:
@@ -40,7 +40,7 @@ for i in range(0,3):
         driver.find_element_by_xpath(item_xpath).click()
         time.sleep(2)
 
-    def field_fill(item_xpath,text):
+    def field_fill(item_xpath,text): ##Field Populate
         try:
             WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, item_xpath)))
         except (TimeoutException) as py_ex:
@@ -49,7 +49,7 @@ for i in range(0,3):
         #action.move_to_element(item_xpath)
         time.sleep(1) 
 
-    def field_fill_with_dropdown(item_xpath,text):
+    def field_fill_with_dropdown(item_xpath,text): ##Dropdown 
         try:
             WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, item_xpath)))
         except (TimeoutException) as py_ex:
